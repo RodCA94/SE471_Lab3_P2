@@ -1,6 +1,6 @@
-public class RegularCoffee extends AbstractCoffee {
+public class LatteCoffee extends AbstractCoffee {
 
-    public RegularCoffee(CMM machine) {
+    public LatteCoffee(CMM machine) {
         super(machine);
     }
 
@@ -11,27 +11,27 @@ public class RegularCoffee extends AbstractCoffee {
 
     @Override
     protected void heatWater() {
-        machine.setTemperature(150);
-        machine.holdTemperature(2);
+        machine.setTemperature(180);
+        machine.holdTemperature(5);
     }
 
     @Override
     protected int getFinishTime() {
-        return 15;
+        return 13;
     }
 
     @Override
     protected int getLEDType() {
-        return 1;
+        return 3;
     }
 
     @Override
-    public double getCost(){
-        return 1.00;
+    public double getCost() {
+        return 3.00;
     }
 
     @Override
-    public String getDescription() {
-        return "Regular";
+    public String getDescription(){
+        return "Latte";
     }
 }

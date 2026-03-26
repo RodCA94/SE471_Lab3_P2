@@ -26,4 +26,5 @@ public abstract class AbstractCoffee implements CoffeeIF{
     protected abstract void grind();
     protected abstract void heatWater();
     protected abstract int getFinishTime();
+    protected abstract int getLEDType();
 }

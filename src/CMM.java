@@ -10,7 +10,7 @@ public class CMM {
     }
 
     public void displayPrice(CoffeeIF coffee) {
-        System.out.println("Coffee: " + coffee.getLEDType());
+        System.out.println("Coffee: " + coffee.getDescription());
         System.out.println("Final price: $" + coffee.getCost());
     }
 
@@ -24,7 +24,25 @@ public class CMM {
     }
 
     public void setTypeLED(int num) {
-        System.out.println("Type LED: " + num);
+        switch (num) {
+            case 1:
+                System.out.println("Type LED: Regular");
+                break;
+            case 2:
+                System.out.println("Type LED: Mocha");
+                break;
+            case 3:
+                System.out.println("Type LED: Latte");
+                break;
+            case 4:
+                System.out.println("Type LED: Espresso");
+                break;
+            case 5:
+                System.out.println("Type LED: Cappuccino");
+                break;
+            default:
+                System.out.println("Invalid Type");
+        }
     }
 
     public void setGrindingTime(int seconds) {
