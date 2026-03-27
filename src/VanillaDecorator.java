@@ -1,4 +1,4 @@
-public abstract class VanillaDecorator extends CoffeeDecorator {
+public class VanillaDecorator extends CoffeeDecorator {
 
     public VanillaDecorator(CoffeeIF coffee) {
         super(coffee);
